@@ -38,6 +38,8 @@ spec:
     grafana:
       defaultDashboardsEnabled: false
       adminPassword: flux
+      service:
+        type: NodePort
   postRenderers:
     - kustomize:
         patches:
